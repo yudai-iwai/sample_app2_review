@@ -7,7 +7,7 @@
       <%= image_tag 'no_image', size: "200x200" %>
     <% end %>
     <div class="list-comment">
-      <span class="list-body"><%= list.body ></span>
+      <span class="list-body"><%= list.body %></span>
       <span class="list-title"><%= link_to list.title, list_path(list.id) %></span>
     </div>
   </div>
@@ -22,8 +22,8 @@
   <span>
     <%= link_to list.title, list_path(list.id) %>
   </span>
-  
+
   <p>画像</p>
   <%= image_tag list.image, size: "200x200" %>
-  
+
 <% end %>
